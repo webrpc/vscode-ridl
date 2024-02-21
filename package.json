@@ -7,7 +7,7 @@
   "private": true,
   "displayName": "ridl",
   "description": "Syntax highlighting for RIDL template files used in the Go Webrpc library.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "engines": {
     "vscode": "^1.86.0"
   },
