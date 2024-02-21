@@ -2,9 +2,9 @@
 
 All notable changes to the "ridl" extension will be documented in this file.
 
-[0.0.1] - 2024-02-21
+## [0.0.1] - 2024-02-21
 
-## Added
+### Added
 
 Initial release of the vscode-webrpc-ridl-syntax extension.
 
