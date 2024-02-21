@@ -2,8 +2,11 @@
 
 All notable changes to the "ridl" extension will be documented in this file.
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
+[0.0.1] - 2024-02-21
 
-## [Unreleased]
+## Added
 
-- Initial release
+Initial release of the vscode-webrpc-ridl-syntax extension.
+
+Provides syntax highlighting support for RIDL files used in the webrpc library.
+For installation instructions and usage details, refer to the [README](https://github.com/Xytrical/vscode-webrpc-ridl-syntax/blob/main/README.md).

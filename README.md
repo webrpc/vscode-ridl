@@ -1,12 +1,14 @@
 # vscode-webrpc-ridl-syntax
 
-vscode-webrpc-ridl-syntax is a Visual Studio Code extension designed to provide syntax highlighting support for RIDL (RPC Interface Definition Language) files used in the webrpc library.
+vscode-webrpc-ridl-syntax is a Visual Studio Code extension designed to provide syntax highlighting support for RIDL files used in the webrpc library.
 
 ## Table of Contents
 
-- [Installation](#installation)
-- [Usage](#usage) 
-- [Credits](#credits)
+- [vscode-webrpc-ridl-syntax](#vscode-webrpc-ridl-syntax)
+  - [Table of Contents](#table-of-contents)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [Credits](#credits)
 
 ## Installation
 

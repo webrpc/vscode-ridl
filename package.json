@@ -3,6 +3,7 @@
   "author": {
     "name": "Xander Voet"
   },
+  "publisher": "XanderAppWorks",
   "private": true,
   "displayName": "ridl",
   "description": "Syntax highlighting for RIDL template files used in the Go Webrpc library.",
