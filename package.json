@@ -1,0 +1,41 @@
+{
+  "name": "vscode-webrpc-ridl-syntax",
+  "author": {
+    "name": "Xander Voet"
+  },
+  "private": true,
+  "displayName": "ridl",
+  "description": "Syntax highlighting for RIDL template files used in the Go Webrpc library.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.86.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "ridl",
+        "aliases": [
+          "ridl"
+        ],
+        "extensions": [
+          ".ridl"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "ridl",
+        "scopeName": "source.ridl",
+        "path": "./syntaxes/ridl.tmLanguage.json"
+      }
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Xytrical/vscode-webrpc-ridl-syntax.git"
+  }
+}

@@ -1,0 +1,123 @@
+{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "ridl",
+  "patterns": [
+    { "include": "#comments" },
+    { "include": "#types" },
+    { "include": "#methods" },
+    { "include": "#strings" },
+    { "include": "#variables" },
+    { "include": "#metadata" }
+  ],
+  "repository": {
+    "comments": {
+      "patterns": [
+        {
+          "name": "comment.line.ridl",
+          "match": "#.*"
+        }
+      ]
+    },
+    "types": {
+      "patterns": [
+        {
+          "name": "keyword.ridl",
+          "match": "^(struct|service|enum)"
+        },
+        {
+          "name": "entity.name.type.ridl",
+          "match": "(?<=struct|service|enum)\\s\\w+"
+        }
+      ]
+    },
+    "methods": {
+      "patterns": [
+        {
+          "name": "entity.name.function.ridl",
+          "match": "(\\w+)(?=\\()"
+        },
+        {
+          "name": "entity.name.type.ridl",
+          "match": "(?<=:\\s)(\\w+)|(?<=\\[\\])\\w+"
+        },
+        {
+          "name": "keyword.other.ridl",
+          "match": "(?=\\=\\>).."
+        }
+      ]
+    },
+    "strings": {
+      "patterns": [
+        {
+          "name": "string.quoted.double.ridl",
+          "begin": "\"",
+          "end": "\""
+        }
+      ]
+    },
+    "metadata": {
+      "patterns": [
+        {
+          "match": "^\\b(webrpc|version|name)\\s*=\\s*(\\S+)",
+          "captures": {
+            "1": { "name": "variable.name.ridl" },
+            "2": { "name": "entity.other.attribute-name.ridl" }
+          }
+        }
+      ]
+    },
+    "variables": {
+      "patterns": [
+        {
+          "name": "variable.name.ridl",
+          "match": "(?<!\\()(\\w+)(?=:|\\?)"
+        },
+        {
+          "name": "variable.parameter.ridl",
+          "match": "(?<=\\()(\\w+)(?=:|\\?)"
+        },
+        {
+          "name": "keyword.operator.new.ridl",
+          "match": "(?=\\+)."
+        },
+        {
+          "name": "keyword.other.ridl",
+          "match": "(?=\\?:)."
+        },
+        {
+          "name": "keyword.ridl",
+          "match": "(?=error|HTTP)\\w+"
+        },
+        {
+          "name": "entity.other.attribute-name.ridl",
+          "match": "(?<=HTTP\\s)\\w+"
+        },
+        {
+          "name": "entity.other.attribute-name.ridl",
+          "match": "(?<=error\\s)\\w+"
+        },
+        {
+          "name": "string.quoted.double.ridl",
+          "match": "(?<=\\=\\s)(?<!version\\s=\\s|name\\s=\\s|webrpc\\s=\\s)\\w+"
+        },
+        {
+          "match": "(?=\\[\\])..",
+          "name": "keyword.ridl"
+        },
+        {
+          "match": "\\s*(?<=\\+\\s)\\S*\\s\\=\\s\\K\\S+",
+          "name": "string.quoted.double.ridl"
+        },
+        {
+          "name": "entity.other.attribute-name.ridl",
+          "match": "^\\s*-\\s\\K([^:]+\\w+)$"
+        },
+        {
+          "name": "entity.name.type.ridl",
+          "match": "<([^<>]+(?:<[^<>]+>)*)>"
+        }
+      ]
+    }
+  },
+  "scopeName": "source.ridl"
+}
