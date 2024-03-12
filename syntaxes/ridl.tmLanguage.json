@@ -50,8 +50,7 @@
       "patterns": [
         {
           "name": "string.quoted.double.ridl",
-          "begin": "\"",
-          "end": "\""
+          "match": "\"[^\"]*\""
         }
       ]
     },
@@ -105,8 +104,8 @@
           "name": "keyword.ridl"
         },
         {
-          "match": "\\s*(?<=\\+\\s)\\S*\\s\\=\\s\\K\\S+",
-          "name": "string.quoted.double.ridl"
+          "name": "string.quoted.double.ridl",
+          "match": "\\s*(?<=\\+\\s)\\S*\\s\\=\\s(?!\")\\K\\S+"
         },
         {
           "name": "entity.other.attribute-name.ridl",

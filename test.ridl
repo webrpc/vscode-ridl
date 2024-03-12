@@ -19,7 +19,7 @@ struct User
 
   - username: string
     + json = USERNAME
-    + go.tag.db = username
+    + go.tag.db = "username hi" 
 
   - role: string
     + go.tag.db = -
