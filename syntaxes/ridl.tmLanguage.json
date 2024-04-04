@@ -43,6 +43,10 @@
         {
           "name": "keyword.other.ridl",
           "match": "(?=\\=\\>).."
+        },
+        {
+          "name": "keyword.operator.new.ridl",
+          "match": "stream"
         }
       ]
     },
