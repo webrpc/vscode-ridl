@@ -46,7 +46,7 @@
         },
         {
           "name": "keyword.operator.new.ridl",
-          "match": "stream"
+          "match": "(?<==>\\s)(?=stream)\\w+"
         }
       ]
     },
