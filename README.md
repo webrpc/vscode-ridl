@@ -8,7 +8,7 @@ To install the extension, follow these steps:
 
 1. Open Visual Studio Code.
 2. Go to the Extensions view by clicking on the square icon in the sidebar.
-3. Search for "vscode-webrpc-ridl-syntax".
+3. Search for "vscode-ridl".
 4. Click Install to install it.
 5. Once installed, the extension will automatically provide syntax highlighting for RIDL files.
 
