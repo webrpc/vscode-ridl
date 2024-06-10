@@ -1,15 +1,13 @@
-webrpc = v1             # version of webrpc schema format (ridl or json)
+webrpc = v1 # version of webrpc schema format (ridl or json)
 
-name = example          # name of your backend app
-version = v0.0.1        # version of your schema
+name = example # name of your backend app
+version = v0.0.1 # version of your schema
 
 enum Kind: uint32
   - USER
   - ADMIN
 
-
 struct Empty
-
 
 struct User
   - id: uint64
@@ -19,7 +17,7 @@ struct User
 
   - username: string
     + json = USERNAME
-    + go.tag.db = "username hi" 
+    + go.tag.db = "username hi"
 
   - role: string
     + go.tag.db = -
@@ -43,11 +41,9 @@ struct ComplexType
   - mapOfUsers: map<string,User>
   - user: User
 
-
-error 1000 UserNotFound "User not found" HTTP 404
-error 2000 Unauthorized "Unauthorized access" HTTP 401
-error 3000 PermissionDenied "Permission denied" HTTP 403
-
+error 1000 UserNotFound     "User not found"      HTTP 404
+error 2000 Unauthorized     "Unauthorized access" HTTP 401
+error 3000 PermissionDenied "Permission denied"   HTTP 403
 
 service ExampleService
   - Ping()
@@ -56,3 +52,4 @@ service ExampleService
   - GetUser(header: map<string,string>, userID: uint64) => (code: uint32, user: User)
   - FindUser(s: SearchFilter) => (name: string, user: User)
   - Subscribe() => stream (message: string)
+
