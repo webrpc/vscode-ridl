@@ -18,3 +18,5 @@ coverage
 
 bin
 out
+
+.DS_Store
