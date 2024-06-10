@@ -15,3 +15,8 @@ coverage
 
 # Vscode extensions
 *.vsix
+
+bin
+out
+
+.DS_Store
